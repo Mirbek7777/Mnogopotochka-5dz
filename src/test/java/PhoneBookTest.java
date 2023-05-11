@@ -61,5 +61,6 @@ public class PhoneBookTest {
         ArrayList<String> result = phoneBook.printAllNames();
 
         assertEquals(expected, result);
+        // коммит для printAllNames
     }
 }
