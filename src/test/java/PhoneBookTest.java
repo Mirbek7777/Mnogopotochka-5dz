@@ -47,6 +47,7 @@ public class PhoneBookTest {
         String expected = "8-999-134-22-11";
 
         assertEquals(expected, result);
+        // коммит для findByName
     }
 
     @Test
