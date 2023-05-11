@@ -17,6 +17,18 @@ public class PhoneBook {
         return map.size();
     }
 
+    public String findByNumber(String value) {
+
+        Optional<String> result = map.entrySet()
+                .stream()
+                .filter(entry -> value.equals(entry.getValue()))
+                .map(Map.Entry::getKey)
+                .findFirst();
+
+        return result.get();
+    }
+
+
 
 
 }

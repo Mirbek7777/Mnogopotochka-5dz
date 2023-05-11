@@ -1,4 +1,3 @@
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,6 +24,19 @@ public class PhoneBookTest {
 
         assertEquals(expected, result);
     }
+
+
+    @Test
+    void testFindByNumber() {
+        phoneBook.add("Братан", "8-999-134-22-11");
+
+        String result = phoneBook.findByNumber("8-999-134-22-11");
+
+        String expected = "Братан";
+
+        assertEquals(expected, result);
+    }
+
 
 
 }
