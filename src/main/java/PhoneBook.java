@@ -29,6 +29,15 @@ public class PhoneBook {
     }
 
 
+    public String findByName(String key){
+        return map.get(key);
+    }
 
+    public ArrayList<String> printAllNames(){
+        Set<String> keys = map.keySet();
+        return (ArrayList<String>) new ArrayList<>(keys).stream()
+                .sorted()
+                .collect(Collectors.toList());
+    }
 
 }
